@@ -14,7 +14,7 @@ if defline.startswith('>'): #Checks whether or not the first line begins with '>
 else:
     print 'Not a FASTA file'
 
-def read_fasta_file(): #Reads file and returns
+def read_fasta_file(): #Reads file and returns the contents of the defline and the sequence string
     while 1:
         sequence = fastaOpen.read().rstrip()
         if sequence == "" or sequence.endswith('*'):
